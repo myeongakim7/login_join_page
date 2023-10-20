@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../registeration/style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="./jquery-bpopup.js"></script>
+      <title>Document</title>
+  </head>
+  <body>
+    <div class="registeration">
+      <div class="container">
+        <h1>멤버십 등록</h1>
+
+        <div class="register_form">
+          <form action="" method="">
+            <div class="form_name">
+              <div class="form_title">이름</div>
+              <label for="name"></label>
+              <input type="text" id="name" placeholder="이름을 입력하세요" autofocus />
+            </div>
+            <div class="form_e-mail">
+              <div class="form_title">아이디(이메일)</div>
+              <label for="e-mail"></label>
+              <input
+                type="email"
+                id="e-mail"
+                placeholder="이메일을 입력하세요"
+              />
+              <input
+                type="submit"
+                id="e-mail_submit_btn"
+                class="register_btn"
+                value="중복확인"
+              />
+            </div>
+            <div class="form_pswd">
+              <div class="form_title">비밀번호</div>
+              <label for="pswd"></label>
+              <input
+                type="password"
+                id="pswd"
+                placeholder="8~15자 길이의 영문, 숫자 조합"
+              minlength="8"
+              maxlength="15"
+                />
+            </div>
+            <div class="form_pswd_re">
+              <div class="form_title">비밀번호 확인</div>
+              <label for="pswd_re"></label>
+              <input
+                type="password"
+                id="pswd_re"
+                placeholder="비밀번호 재입력"
+              />
+            </div>
+         <div class="form_number_box">
+    <div class="form_title  phone">휴대폰 번호</div>
+    <div class="form_number">
+        <div class="number_receive">
+            <label for="number"></label>
+            <input type="tel" id="number" placeholder="0101234567" maxlength="10"/>
+            <input
+                type="submit"
+                id="number_receive_btn"
+                class="register_btn"
+                value="인증번호 받기"/>
+        </div>
+        <!--number_receive-->
+        <div class="number_confirm">
+            <label for="number2"></label>
+            <input type="text" id="number2" placeholder="12345"/>
+            <input
+                type="submit"
+                id="number_confirm_btn"
+                class="register_btn"
+                value="인증번호 확인"/>
+        </div>
+        <!--number_confirm-->
+        <div class="form_number_text">
+            * 계정 분실시 본인인증 정보로 활용됩니다.
+        </div>
+    </div>
+    <!--form_number_box-->
+            </div>
+          </form>
+        </div>
+
+        <!-- 이용약관 ▼ -->
+        <div class="consent">
+          <div class="consent_title">
+            <h2>이용약관 동의</h2>
+          </div>
+          <form action="" method="">
+            <div class="consent_box">
+              <ul>
+                <li>
+                  <input type="checkbox" name="check" id="check" />
+                  <label for="check">전체동의</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="check1" id="check1" />
+                  <label for="check1">
+                    <span>[선택]</span>이벤트 및 혜택 정보를
+                    수신하겠습니다.</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" name="check2" id="check2" />
+                  <label for="check2">
+                    <span>[선택]</span>이용약관과 개인정보 처리방침에
+                    동의합니다.</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- consent_box -->
+          </form>
+        </div>
+        <!-- consent -->
+      
+      <div class="complete">
+        <label for="complete_btn"></label>
+        <input type="submit" name="complete_btn" id="complete_btn" value="가입완료">
+      </div>
+
+
+
+      <!-- 팝업창 -->
+      <div class="pop_up">
+        <div class="pop_up_contents">
+          <i class="fa-solid fa-xmark fa-lg b-close"></i>
+          <h3>가입이 완료되었습니다</h3>
+        </div>
+      </div>
+      </div>
+      <!-- container -->
+      
+    </div>
+    <!-- registeration -->  
+    <script src="/registeration/index.js"></script>
+  </body>
+
+</html>
