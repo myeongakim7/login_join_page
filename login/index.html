@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login/style.css">
+     <!-- jquery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="login">
+    <div class="container">
+        <div class="login_logo">
+            <img src="../images/login.png" alt="login_logo">
+        </div>
+        <div class="login_idpswd">
+        <form action="">
+            <label for="e-mail"></label>
+            <input type="text" id="e-mail"placeholder="아이디(이메일)" required>
+            <label for="pswd"></label>
+            <input type="password" id="pswd"placeholder="비밀번호" required>
+          
+            <div class="login_save">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                    <g id="icon_check" data-name="그룹 1061" transform="translate(-753 -697)">
+                      <g id="icon_check_rect" data-name="사각형 110" transform="translate(753 697)" stroke="gray" stroke-width="1">
+                        <rect width="22" height="22" stroke="none"/>
+                        <rect x="0.5" y="0.5" width="21" height="21" fill="#fff"/>
+                      </g>
+                      <path id="icon_check_svg" data-name="패스 170" d="M5859.121,2428.126l4.788,4.857,8.591-8.715" transform="translate(-5101.074 -1721)" fill="none" stroke="#000" stroke-width="1"/>
+                    </g>
+                  </svg>
+                </a>
+                <div class="login_save_text"><a href="">로그인 정보 저장</a></div>
+            </div>
+            <div class="btn green"><a href="">로그인</a></div>
+        </form>
+
+<script>
+    $(function(){
+        $('.login_save').on('click',function(e){    
+            $('.login_save svg').toggleClass('on')
+            e.preventDefault();
+        })
+    })
+</script>
+
+        <div class="idpswd_search">
+            <a href="">아이디</a>
+                <span>|</span>
+            <a href="">비밀번호 찾기</a>
+        </div>
+    </div><!--login_idpswd-->
+        <div class="join">
+        <div class="join_btn">
+            <div class="line"></div>
+            <div class="join_text">
+                <a href="#">회원 가입하기</a></div>
+            <div class="line"></div>
+        </div><!--join_btn-->
+        <div class="start">
+            <ul>
+                <li class="btn white"><a href="">이메일로 가입하기</a></li>
+                <li class="btn yellow kakao"><a href="">카카오로 시작하기</a></li>
+                <li class="btn green2 naver"><a href="">네이버로 시작하기</a></li>
+            </ul>
+        </div>
+    </div><!--join-->
+    </div>
+    <!-- container -->
+</div>
+    <!-- login -->
+</body>
+</html>
